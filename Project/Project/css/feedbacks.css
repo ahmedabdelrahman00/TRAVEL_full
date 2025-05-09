@@ -1,0 +1,177 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000;
+        }       
+        /* Main Content Styling */
+        main {
+            margin-top: 60px; /* Adjust for fixed header */
+            padding: 20px;
+        }
+
+        /* Reviews and Values Sections */
+        .reviews, .values {
+            margin-bottom: 40px;
+        }
+
+        /* Image Navigation Section */
+        .image-navigation {
+            margin-bottom: 40px; /* Space below this section */
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .image-container {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Hide radio buttons */
+        .image-container input[type="radio"] {
+            display: none;
+        }
+
+        .image-container .images {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 400%; /* 4 images * 100% each */
+        }
+
+        .image-container .images div {
+            width: 100%;
+            flex: none;
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Position labels */
+        .image-navigation label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Show the correct image */
+        #image1:checked ~ .image-container .images {
+            transform: translateX(0);
+        }
+
+        #image2:checked ~ .image-container .images {
+            transform: translateX(-100%);
+        }
+
+        #image3:checked ~ .image-container .images {
+            transform: translateX(-200%);
+        }
+
+        #image4:checked ~ .image-container .images {
+            transform: translateX(-300%);
+        }
+
+        /* Table Container for Values */
+        .values-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+
+        /* Card Styling with Animation and Gold Border */
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px; /* More rounded borders */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid Gold; /* Gold border */
+            transition: transform 0.3s, box-shadow 0.3s; /* Add transition for animation */
+        }
+
+        .review-card {
+            border: 2px solid black; /* Black border for reviews */
+            cursor: pointer;
+            margin-bottom: 20px; /* Space between each review card */
+            border-radius: 15px; /* More rounded borders */
+        }
+
+        .review-card:hover {
+            border-color: red; /* Highlight with red border on hover */
+            transform: translateY(-10px); /* Move up on hover */
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.5); /* Highlight with red shadow on hover */
+        }
+
+        /* Stars styling */
+        .stars {
+            color: #FFD700; /* Gold color for stars */
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Reviews Styling */
+        .reviews h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .reviews h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .reviews p {
+            margin: 0 0 10px;
+        }
+
+        .reviews .author {
+            font-style: italic;
+            color: #0000FF; /* Blue color for author */
+        }
+
+        /* Values Styling */
+        .values h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+		
+.button-container {
+  background-color: #2b2b2b; 
+  padding: 17px;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.button-container a {
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.button-container a:hover {
+  background-color: #444; 
+}

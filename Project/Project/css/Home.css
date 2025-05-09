@@ -1,0 +1,145 @@
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #292E33;
+            color: white;
+            text-align: center;
+        }
+        /* GIF Background Section */
+        .gif-background {
+            width: 100%;
+            height: 0px; /* Adjust the height as needed */
+            background-image: url('your-gif-file.gif'); /* Replace with actual GIF path */
+            background-size: cover;
+            background-position: center;
+            margin-top: 60px; /* Adjust for fixed header */
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../images/k.GIF); /* Replace with actual image path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .hero a {
+            background-color: #000; /* Black background for the button */
+            color: #fff; /* White text */
+            text-decoration: none; /* Remove underline */
+            padding: 20px 40px; /* Increase padding to make it larger */
+            font-size: 1.5em; /* Make the text larger */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition effect */
+            display: inline-block; /* Make it behave like a block element */
+            margin: 20px 0; /* Add space above and below the button */
+        }
+
+        .hero a:hover {
+            background-color: red; /* Change color to red on hover */
+        }
+
+        /* Why Us Section */
+        .why-us {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background-color: #fff;
+            color: #000; /* Text color changed to black for contrast */
+        }
+
+        .why-us .text {
+            max-width: 600px;
+        }
+
+        .why-us h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .why-us p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Image on the right */
+        img {
+            width: 450px; /* Set width */
+            height: 450px; /* Set height */
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover; /* Ensure the image fills the circle without distorting */
+            margin-left: 20px; /* Add some space between text and image */
+        }
+
+        /* Read More Button */
+        .read-more-btn {
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .read-more-btn:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+		
+.button-container {
+  background-color: #2b2b2b; 
+  padding: 17px;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.button-container a {
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.button-container a:hover {
+  background-color: #444; 
+}
+

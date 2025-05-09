@@ -1,0 +1,103 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+
+        /* Main Content Styling */
+     
+
+        /* Reviews and Values Sections */
+        .reviews, .values {
+            margin-bottom: 40px;
+        }
+
+        /* Table Container for Values */
+        .values-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+
+        /* Card Styling with Animation and Red Border */
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px; /* More rounded borders */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid Gold; /* Red border */
+            transition: transform 0.3s, box-shadow 0.3s; /* Add transition for animation */
+        }
+
+        .review-card {
+            border: 2px solid black; /* Black border for reviews */
+            cursor: pointer;
+            margin-bottom: 20px; /* Space between each review card */
+            border-radius: 15px; /* More rounded borders */
+        }
+
+        .review-card:hover {
+            border-color: red; /* Highlight with red border on hover */
+            transform: translateY(-10px); /* Move up on hover */
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.5); /* Highlight with red shadow on hover */
+        }
+
+        /* Stars styling */
+        .stars {
+            color: #FFD700; /* Gold color for stars */
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Reviews Styling */
+        .reviews h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .reviews h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .reviews p {
+            margin: 0 0 10px;
+        }
+
+        .reviews .author {
+            font-style: italic;
+            color: #0000FF; /* Changed color to blue */
+        }
+
+        /* Values Styling */
+        .values h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+		
+.button-container {
+  background-color: #2b2b2b; 
+  padding: 17px;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.button-container a {
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.button-container a:hover {
+  background-color: #444; 
+}
+

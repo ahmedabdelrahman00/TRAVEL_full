@@ -1,0 +1,101 @@
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+      
+        /* Travel Options Section */
+        .activities-section {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .activities-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Elevates the card on hover */
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Button to go back to home */
+        .back-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .back-home:hover {
+            background-color: #FF0000;
+            color: #333;
+        }
+		
+.button-container {
+  background-color: #2b2b2b; 
+  padding: 17px;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.button-container a {
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.button-container a:hover {
+  background-color: #444; 
+}
+
+	

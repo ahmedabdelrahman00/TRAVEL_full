@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #F5F5DC;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.hero-img {
+  background: url('../images/LXX.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 350px 350px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  color:white;
+}
+
+.seaside {
+  text-align: center;
+  margin-top: 240px;
+  padding: 100px 80px;
+  background: #FFFAF0;
+}
+
+.seaside h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 40px;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  background: #FFFAF0;
+  padding: 70px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  padding: 15px 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.footer-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.button-container {
+  background-color: #2b2b2b; 
+  padding: 17px;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.button-container a {
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.button-container a:hover {
+  background-color: #444; 
+}

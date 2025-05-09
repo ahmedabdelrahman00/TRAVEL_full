@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Container</title>
+  <style>
+  body{
+   background-color: #2b2b2b;
+  }
+   .button-container {
+  background-color: #2b2b2b; 
+  padding: 17px;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.button-container button {
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #444; 
+}  
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button>Home</button>
+    <button>About</button>
+    <button>Review</button>
+    <button>Contact</button>
+  </div>
+</body>
+</html>

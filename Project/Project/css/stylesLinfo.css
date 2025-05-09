@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #FFFAF0;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.background-one {
+  background-color: #D4AF37; /* Golden color for heritage */
+}
+
+.background-two {
+  background-color: #C2B280; /* Light brown for history */
+}
+
+.background-three {
+  background-color: #8B4513; /* Saddle brown for historical theme */
+}
+
+/* Content Layout */
+.content-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.content-right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+}
+
+.image {
+  flex: 1;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+.image-one {
+  background-image: url('../images/L.jpg'); 
+}
+.image-two {
+  background-image: url('../images/L1.jpg');
+}
+.image-three {
+  background-image: url('../images/L2.jpg');
+}
+
+.button-container {
+  background-color: #2b2b2b; 
+  padding: 17px;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.button-container a {
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.button-container a:hover {
+  background-color: #444; 
+}
