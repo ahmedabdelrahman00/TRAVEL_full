@@ -9,7 +9,7 @@ const firebaseConfig = {
   authDomain: "travel-advisor-cac06.firebaseapp.com",
   databaseURL: "https://travel-advisor-cac06-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "travel-advisor-cac06",
-  storageBucket: "travel-advisor-cac06.firebasestorage.app",
+  storageBucket: "travel-advisor-cac06.appspot.com",
   messagingSenderId: "307821978887",
   appId: "1:307821978887:web:71ce0fb2e25ed8fb0a51a2"
 };
@@ -50,23 +50,10 @@ class UserRegistrationForm {
             errorElement.textContent = 'This field is required.';
             return false;
         }
-        
-        if (username.length < 3) {
+        if (username.length < 3 || /\s/.test(username) || !/^[a-zA-Z]+$/.test(username)) {
             errorElement.textContent = 'Invalid username';
             return false;
         }
-        
-        if (/\s/.test(username)) {
-            errorElement.textContent = 'Invalid username';
-            return false;
-        }
-        
-        const usernameRegex = /^[a-zA-Z]+$/;
-        if (!usernameRegex.test(username)) {
-            errorElement.textContent = 'Invalid username';
-            return false;
-        }
-        
         errorElement.textContent = '';
         return true;
     }
@@ -79,13 +66,11 @@ class UserRegistrationForm {
             errorElement.textContent = 'This field is required.';
             return false;
         }
-        
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             errorElement.textContent = 'Please enter a valid email address (e.g., example@domain.com).';
             return false;
         }
-        
         errorElement.textContent = '';
         return true;
     }
@@ -98,18 +83,10 @@ class UserRegistrationForm {
             errorElement.textContent = 'This field is required.';
             return false;
         }
-        
-        if (password.length < 8) {
+        if (password.length < 8 || !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
             errorElement.textContent = 'Invalid password. Your password must be at least 8 characters long and include at least one special character (e.g., ! @ # $ %).';
             return false;
         }
-        
-        const specialChars = /[!@#$%^&*(),.?":{}|<>]/;
-        if (!specialChars.test(password)) {
-            errorElement.textContent = 'Invalid password. Your password must be at least 8 characters long and include at least one special character (e.g., ! @ # $ %).';
-            return false;
-        }
-        
         errorElement.textContent = '';
         return true;
     }
@@ -123,12 +100,10 @@ class UserRegistrationForm {
             errorElement.textContent = 'This field is required.';
             return false;
         }
-        
         if (password !== confirmPassword) {
             errorElement.textContent = 'Passwords do not match.';
             return false;
         }
-        
         errorElement.textContent = '';
         return true;
     }
@@ -153,7 +128,7 @@ class UserRegistrationForm {
             // 1. Create authenticated user
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const userId = userCredential.user.uid;
-            
+
             // 2. Store additional user data
             await set(ref(database, 'users/' + userId), {
                 username: username,
@@ -161,15 +136,16 @@ class UserRegistrationForm {
                 role: "User", // default role
                 createdAt: new Date().toISOString()
             });
-            
-            
+
             alert('Registration successful! Welcome to Travel Advisor.');
             this.form.reset();
-            
+
+            // ✅ Redirect to homepage
+            window.location.href = "home.html";  // Change path as needed
+
         } catch (error) {
             console.error('Registration error:', error);
-            
-            // Preserve your original error handling approach
+
             if (error.code === 'auth/email-already-in-use') {
                 document.getElementById('email-error').textContent = 'This email is already registered.';
             } else {
